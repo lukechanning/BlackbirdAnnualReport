@@ -2,6 +2,9 @@ GEM
   remote: https://rubygems.org/
   specs:
     blankslate (2.1.2.4)
+    bourbon (4.2.3)
+      sass (~> 3.4)
+      thor
     celluloid (0.16.0)
       timers (~> 4.0.0)
     classifier-reborn (2.0.3)
@@ -73,6 +76,9 @@ GEM
     mercenary (0.3.5)
     method_source (0.8.2)
     multi_json (1.11.2)
+    neat (1.7.2)
+      bourbon (>= 4.0)
+      sass (>= 3.3)
     nenv (0.2.0)
     notiffany (0.0.6)
       nenv (~> 0.1)
@@ -106,7 +112,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bourbon
   guard
   guard-jekyll-plus
   guard-livereload
   jekyll
+  neat

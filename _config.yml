@@ -4,7 +4,6 @@ port: 4000
 host: localhost
 safe: false
 
-
 ### site serving configuration ###
 exclude: [CNAME, README.md, .gitignore]
 permalink: / ## disables post output
@@ -26,10 +25,17 @@ google_analytics_key: UA-38926555-29 ## put YOUR key here to enable tracking! (b
 
 ### template colors, used site-wide via css ###
 colors:
-  black:     '#111111'
+  black:     '#333333'
   white:     '#f8f8f8'
-  blue:      '#49a7e9'
+  blue:      '#89CDD9'
   green:     '#9bcf2f'
   purple:    '#c869bf'
   orange:    '#fab125'
   turquoise: '#0fbfcf'
+
+###Add Bourbon
+gems: [bourbon, neat]
+
+###Fix Sass Directory
+sass:
+    sass_dir: scss/
