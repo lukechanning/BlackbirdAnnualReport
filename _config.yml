@@ -31,7 +31,7 @@ colors:
   green:     '#9bcf2f'
   purple:    '#c869bf'
   orange:    '#fab125'
-  turquoise: '#0fbfcf'
+  turquoise: '#87DEE9'
 
 ###Add Bourbon
 gems: [bourbon, neat]
@@ -39,3 +39,4 @@ gems: [bourbon, neat]
 ###Fix Sass Directory
 sass:
     sass_dir: _sass
+    style: compressed

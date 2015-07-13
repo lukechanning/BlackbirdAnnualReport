@@ -1,0 +1,205 @@
+// Intro Section
+
+	#intro {
+		background: url(/img/intro-bg.png);
+		background-size: cover;
+		.heart {
+			text-shadow: 0 1px 1px rgba($black, 0.25);
+		}
+		.btn {
+			font-size: 1.2rem;
+			font-weight: 700;
+			color: $white !important;
+			border: 2px solid $white;
+			&:hover {
+				background-color: $blue;
+				color: $white !important;
+				border-color: $blue;
+			}
+		}
+		.next-button {
+			margin-top: 3rem;
+		}
+	}
+
+// Snapshot Section
+
+	#snapshot {
+		background: url(/img/wild_flowers.png);
+
+		.container {
+			width: 100%;
+			max-width: 1140px;
+		}
+
+		section {
+			&.first {
+				@include span-columns(5);
+			}
+			&.second {
+				@include span-columns(7);
+			}
+		}
+
+		//Typographical elements
+
+			h3 {
+				text-align: left;
+				font-size: 2rem;
+				font-weight: 700;
+				text-shadow: 0 2px 0 rgba($black,0.25);
+				padding: 0.5rem 0;
+				margin-bottom: 0;
+				text-transform: uppercase;
+			}
+
+			p {
+				margin: 0;
+				max-width: 100% !important;
+				padding: 0;
+			}
+
+		.grid-item:hover {
+			.subtlecircle {
+				box-shadow: 0 3px 5px rgba(25,25,25,0.55);
+			}
+		}
+
+		@import '_grid-items.scss';	
+	}
+
+// Staff Section
+
+	#staff {
+		section {
+			&.first {
+				@include span-columns(5);
+			}
+			&.second {
+				@include span-columns(7);
+			}
+			&.one-third {
+				@include span-columns(4);
+				margin-right: 0;
+			}
+		}
+	}
+
+// Success Section
+
+	#success {
+		section {
+			&.first {
+				@include span-columns(6);
+				margin-right: 0;
+				margin-left: 2.35765%;
+			}
+			&.second {
+				@include span-columns(6);
+			}
+		}
+		h3 {
+			text-align: left;
+			color: $white;
+			font-size: 2rem;
+			font-weight: 700;
+			text-shadow: 0 2px 0 rgba($black,0.25);
+			padding: 0.5rem 0;
+			margin-bottom: 0;
+			text-transform: uppercase;
+		}
+		p {
+			text-align: left;
+			font-size: 1.2rem;
+			padding: 0;
+		}
+		.slider-image {
+			text-align: center;
+			.highlight {
+				display: inline-block;
+				img {
+					max-height: 300px;
+					border: 5px solid $white;
+					box-shadow: 0 5px 3px rgba($black, 0.25);
+				}
+			}
+		}
+		.slider-nav {
+			text-align: center;
+			margin: 3rem auto;
+			.slick-slide {
+				color: rgba($black, 0.25);
+				&:hover,.slick-active, &.slick-active {
+					color: #555;
+					cursor: pointer;
+				}
+			}
+			.slick-track {
+				background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIHWPQ1dU1BgABzQC7XXMTYQAAAABJRU5ErkJggg==);
+				display: block;
+				padding: 1rem 0;
+				margin-bottom: 20px;
+				border-radius: 6px;
+				box-shadow: 0 2px 4px rgba(25,25,25,0.25);
+				.fa-4x {
+					text-shadow: 0 1px 1px rgba(25,25,25,0.25);
+				}
+			}
+		}
+	}
+
+// Scholarships Section
+	
+	#scholarships {
+		section {
+			&.first {
+				@include span-columns(8);
+			}
+			&.second {
+				position: relative;
+				@include span-columns(4);
+			}
+		}
+		.photoset-grid {
+			  width: 200% !important;
+			  position: absolute;
+			  bottom: -25.5rem;
+			img {
+				box-shadow: 0 3px 3px rgba(136,136,136,0.55);
+			}
+		}	
+		h3 {
+			text-align: left;
+			font-size: 2.3rem;
+		}
+	}
+
+//Support Section
+
+#support {
+	text-align: center;
+	h2, p {
+		color: $black;
+		text-shadow: 0 1px 2px rgba($white, 0.25);
+	}
+	h2 {
+		font-size: 2.5rem;
+	}
+	.btn {
+		margin-top: 2.3rem;
+		font-size: 1.2rem;
+		font-weight: 700;
+		color: $white !important;
+		border: 2px solid $white;
+		&:hover {
+			background-color: $white;
+			color: $turqoise !important;
+			border-color: $turqoise;
+			
+		}
+	}
+	.next-button {
+		margin-top: 3rem;
+	}
+}
+

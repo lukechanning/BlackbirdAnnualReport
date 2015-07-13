@@ -17,6 +17,10 @@ body {
     margin: 0;
   }
 
+  .sectiondivider h5 {
+    bottom: 2.5rem;
+  }
+
   hr {
     border-bottom: 1px solid $light-gray;
     border-left: none;
@@ -134,4 +138,9 @@ body {
   p.author {
     font-family: $sans-serif;
   }
+
+  .text-red {
+    color: $red;
+  }
+
 }
