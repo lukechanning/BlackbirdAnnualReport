@@ -1,0 +1,15 @@
+nav {
+	z-index: 999 !important;
+	.first {
+		@include span-columns(4);
+	}
+	.second {
+		@include span-columns(8);
+	}
+	.logo {
+		max-width: 230px !important;
+		img {
+			padding: 0.5rem;
+		}
+	}
+}

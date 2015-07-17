@@ -1,8 +1,24 @@
 // Intro Section
 
 	#intro {
-		background: url(/img/intro-bg.png);
+		background: url(/img/intro-bg.jpg);
 		background-size: cover;
+		padding: 0;
+		.container {
+			background: -moz-linear-gradient(top,transparent 0,#000 100%);
+			background: -webkit-gradient(linear,left top,left bottom,color-stop(0,transparent),color-stop(100%,#000));
+			background: -webkit-linear-gradient(top,transparent 0,#000 100%);
+			background: -o-linear-gradient(top,transparent 0,#000 100%);
+			background: -ms-linear-gradient(top,transparent 0,#000 100%);
+			background: linear-gradient(to bottom,transparent 0,#000 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000', GradientType=0 );
+			width: 100%;
+			height: 100%;
+			padding: 140px 0 210px 0;
+		}
+		h1, h2, h3, h4, p, a {
+			color: $white;
+		}
 		.heart {
 			text-shadow: 0 1px 1px rgba($black, 0.25);
 		}
@@ -70,7 +86,7 @@
 
 // Staff Section
 
-	#staff {
+	#board {
 		section {
 			&.first {
 				@include span-columns(5);
@@ -103,10 +119,17 @@
 			color: $white;
 			font-size: 2rem;
 			font-weight: 700;
-			text-shadow: 0 2px 0 rgba($black,0.25);
+			text-shadow: 0 2px 0 rgba($black,0.65);
 			padding: 0.5rem 0;
 			margin-bottom: 0;
 			text-transform: uppercase;
+		}
+		h4 {
+			font-family: 'Gloria Hallelujah', cursive;
+			color: $white;
+			font-size: 1.5rem;
+			line-height: 2.2rem;
+			text-shadow: 0 2px 5px rgba($black,0.45);
 		}
 		p {
 			text-align: left;
@@ -174,20 +197,66 @@
 		}
 	}
 
+//Partnerships Section
+
+	#partnerships {
+		padding: 0;
+		.faicon {
+			z-index: 150;
+		}
+		.logo-grid {
+			@include outer-container;
+			max-width: 100%;
+			.block {
+				@include span-columns(3);
+				@include omega(4n);
+				opacity: 0.6;
+			}
+		}
+		.container {
+			padding: 210px 0;
+			width: 100%;
+			overflow: hidden;
+		}
+		.first {
+			position: relative;
+			margin: 0 auto;
+			width: 960px;
+			text-shadow: 0 1px 2px rgba(25,25,25,0.45);
+			z-index: 250;
+		}
+		.second {
+			position: absolute;
+			top: -1rem;
+			left: 0;
+			width: 100%;
+			z-index: 100;
+		}
+		.even {
+			margin-top: -8rem;
+		}
+	}
+
 //Support Section
 
 #support {
-	text-align: center;
+	text-align: left;
+	.faicon {
+		z-index: 150;
+	}
 	h2, p {
 		text-shadow: 0 1px 2px rgba($black, 0.25);
 	}
 	p {
 		color: $black;
+		padding: 0;
 	}
 	h2 {
+		padding: 0;
+		text-align: left;
 		color: $white;
 		font-size: 2.5rem;
-		border-bottom: 2px solid $white;
+		text-transform: uppercase;
 	}
 	.btn {
 		margin-top: 2.3rem;
@@ -204,6 +273,23 @@
 	}
 	.next-button {
 		margin-top: 3rem;
+	}
+	.first {
+		@include span-columns(7);
+	}
+	.second {
+		@include span-columns(5);	
+		text-align: center;	
+		.fa-stack {
+			font-size: 10rem;
+			background:rgba(25,25,25,0.25);
+		}
+		.heart {
+			margin: 0 auto;
+			display: block;
+			float: none;
+			text-align: center;
+		}
 	}
 }
 
