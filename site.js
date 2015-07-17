@@ -3,11 +3,11 @@
 (function pulse(back) {
 $('#heart .beat').animate(
     {
-        width: (back) ? $('#heart .beat').width() + 10 : $('#heart .beat').width() - 10            
+        width: (back) ? $('#heart .beat').width() + 5 : $('#heart .beat').width() - 5           
     }, 1000);
 $('#heart').animate(
     {          
-        'font-size': (back) ? '10rem' : '10.1rem',
+        'font-size': (back) ? '10rem' : '10.05rem',
         opacity: (back) ? 1 : 0.9
     }, 1000, function(){pulse(!back)});
 })(false);
