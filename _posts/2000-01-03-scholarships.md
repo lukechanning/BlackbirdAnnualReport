@@ -11,9 +11,9 @@ fa-icon: trophy
 
 <ul>
 <li>That’s a lot of families who have no money for extracurricular activities, including the arts.</li>
-<li>The good news? Blackbird is working to help these families</li>
-<li>by providing partial and full scholarships.</li>
-<li>We have given away over $130,000 in scholarships since 2009. 36 students received scholarships for 2014-15.</li>
+<li>The good news? Blackbird is working to help these families by providing partial and full scholarships.</li>
+<li>We have given away over $130,000 in scholarships since 2009.</li>
+<li>36 students received scholarships in 2014-15. Now help us give even more!</li>
 </ul>
 
 </section>
