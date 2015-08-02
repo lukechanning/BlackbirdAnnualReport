@@ -83,8 +83,21 @@
 
 		@import '_grid-items.scss';	
 	}
+	
+// Board Section
 
-// Staff Section
+	#staff {
+		section {
+			&.first {
+				@include span-columns(5);
+			}
+			&.second {
+				@include span-columns(7);
+			}
+		}
+	}
+
+// Board Section
 
 	#board {
 		section {
