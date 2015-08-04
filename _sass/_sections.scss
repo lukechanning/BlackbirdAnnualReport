@@ -96,6 +96,17 @@
 			}
 		}
 	}
+	
+	@media only screen and (max-width:600px) {
+		#staff {
+			section {
+				&.second, &.first {
+					width: 100%;
+					display: block;
+				}
+			}
+		}
+	}
 
 // Board Section
 
