@@ -87,6 +87,7 @@
 // Board Section
 
 	#staff {
+		background: url(/img/confectionary.png);
 		section {
 			&.first {
 				@include span-columns(5);
@@ -111,6 +112,7 @@
 // Board Section
 
 	#board {
+		background: url(/img/symphony.png);
 		section {
 			&.first {
 				@include span-columns(5);
@@ -198,6 +200,7 @@
 // Scholarships Section
 	
 	#scholarships {
+		background: url(/img/upfeathers.png);
 		section {
 			&.first {
 				@include span-columns(8);
