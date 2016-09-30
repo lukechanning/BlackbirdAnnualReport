@@ -66,10 +66,20 @@
 
     <div id="footer" class="section text-white">
       <div class="container">
-        {% capture foottext %} {% include footer.md %} {% endcapture %}
-        {{ foottext | markdownify }}
+        
+        <div class="row">
+            <img src="/img/united-way.png" />
+            <img src="/img/arkansas-arts.png" />
+        </div>
+        
+        <div class="row">
+          {% capture foottext %} {% include footer.md %} {% endcapture %}
+          {{ foottext | markdownify }}
+        </div>
+        
       </div>
     </div>
+    
   </div>
 
   {% include analytics.html %}
